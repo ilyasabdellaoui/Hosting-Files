@@ -1,0 +1,161 @@
+@media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  
+    h1, h2 {
+      font-size: 18px;
+    }
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    background-color: #e0e0e0;
+    margin-top: 130px;
+
+  }
+
+  nav {
+    position: absolute;
+    top: 0;
+  }
+  
+  
+  .main-content {
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    color: #00bcd4;
+    margin: 20px 0;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px 0;
+  }
+
+  .card {
+    background-color: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+    padding: 20px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+  }
+  
+  .card h2 {
+    font-size: 24px;
+    color: #00bcd4;
+    margin: 20px 0;
+  }
+  
+  .card p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px 0;
+  }
+  
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 20px 0;
+  }
+  
+  a {
+    color: #0074d9;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .profile-image {
+    margin: 0 auto 20px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #333;
+    background-image: url(assets/profile.png);
+    background-size: cover;
+  }
+  
+  .project-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #333;
+    color: #fff;
+  }
+
+  .card {
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+    margin: 20px;
+  }
+
+  .card {
+    /* other styles here */
+    transition: 0.5s; /* add a transition effect */
+  }
+  
+  .card:hover {
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.19), 0px 6px 6px rgba(0,0,0,0.23);
+  }
+  
+  .card {
+    /* Other styles */
+    transition: all 0.5s ease-in-out;
+  }
+
+  .project-card {
+    background-color: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    padding: 10px;
+  }
+  
+  .project-card:hover {
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
+    transform: translateY(-2px);
+  }
+
+  .card-container {
+    display: flex;
+  }
+  
+  .card {
+    flex: 1;
+  }
+  
