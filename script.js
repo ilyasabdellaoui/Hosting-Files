@@ -2,20 +2,12 @@
 const modeButton = document.querySelector(".mode-button");
 const nav = document.querySelector("nav");
 
-// Add an event listener to the mode button
-modeButton.addEventListener("click", function() {
-  // Toggle the "dark" class on the navbar element
-  nav.classList.toggle("dark");
+const navLinks = document.querySelectorAll("nav ul li a:not(.left-group a)");
 
-  // Update the text of the mode button
-  if (nav.classList.contains("dark")) {
-    modeButton.innerHTML = "Light Mode";
-  } else {
-    modeButton.innerHTML = "Dark Mode";
-  }
-});
-
-const navLinks = document.querySelectorAll("nav ul li a");
+// Add a class to the navbar for small screens
+if (window.innerWidth < 768) {
+  navbar.classList.add('small-screen');
+}
 
 navLinks.forEach((link) => {
   link.addEventListener("mouseenter", (event) => {
@@ -64,9 +56,9 @@ img.addEventListener("load", function() {
 
 
 // Add an event listener to the About Me button in the navbar
-document.querySelector("#about-me-button").addEventListener("click", function() {
+document.querySelector("#LA BOÎTE À MERVEILLES").addEventListener("click", function() {
   // Redirect the user to the about page when the button is clicked
-  window.location = "about.html";
+  window.location = "page1.html";
 });
 
 // Get all the cards on the page
@@ -83,5 +75,5 @@ cards.forEach(card => {
 const card = document.querySelector('.card'); // select the card element
 
 card.addEventListener('click', () => {
-  window.location.href = 'about.html'; // redirect to about page on click
+  window.location.href = 'page1.html'; // redirect to about page on click
 });
