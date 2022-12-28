@@ -34,7 +34,7 @@ navLinks.forEach((link) => {
   });
   
   link.addEventListener("mouseleave", (event) => {
-    event.target.style.backgroundColor = "";
+    event.target.style.backgroundColor = "#00bcd4";
   });
 });
 
