@@ -16,6 +16,15 @@ document.querySelector("nav button.navbar-button").addEventListener("click", fun
   this.classList.toggle("active");
   document.querySelector("nav ul").classList.toggle("active");
 });
+navLinks.forEach((link) => {
+  link.addEventListener("mouseenter", (event) => {
+    event.target.style.backgroundColor = "#00bcd4";
+  });
+  
+  link.addEventListener("mouseleave", (event) => {
+    event.target.style.backgroundColor = "#00bcd4";
+  });
+});
 
 // Get all the cards on the page
 const cards = document.querySelectorAll('.card');
@@ -27,16 +36,6 @@ cards.forEach(card => {
   });
 });
 
-
-navLinks.forEach((link) => {
-  link.addEventListener("mouseenter", (event) => {
-    event.target.style.backgroundColor = "#00bcd4";
-  });
-  
-  link.addEventListener("mouseleave", (event) => {
-    event.target.style.backgroundColor = "#00bcd4";
-  });
-});
 
 // Add an event listener to the About Me button in the navbar
 document.querySelector("#LA BOÎTE À MERVEILLES").addEventListener("click", function() {
