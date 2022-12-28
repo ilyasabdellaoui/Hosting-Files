@@ -250,3 +250,41 @@ nav {
     }
   }
   
+  @media (max-width: 768px) {
+    nav {
+      /* Hide the nav links on small screens */
+      display: none;
+    }
+  
+    nav button.navbar-button {
+      /* Show the navbar button on small screens */
+      display: block;
+    }
+  
+    nav.small-screen {
+      /* Show the nav links on small screens when the navbar button is clicked */
+      display: block;
+    }
+  
+    nav.small-screen ul {
+      /* Style the nav links on small screens */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  
+    nav.small-screen ul li {
+      /* Style the nav link items on small screens */
+      width: 100%;
+      margin: 0;
+    }
+  
+    nav.small-screen ul li a {
+      /* Style the nav link anchor elements on small screens */
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
