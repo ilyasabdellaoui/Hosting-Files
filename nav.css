@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   nav {
     /* Set the display property of the navbar to flex */
     display: flex;
@@ -285,7 +285,7 @@ nav {
   
   
 /* Hide the navbar elements on small screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
     nav ul li:not(.navbar-button) {
       display: none;
     }
@@ -295,12 +295,12 @@ nav {
   }
   
   /* Show the navbar elements on small screens when the navbar button is clicked */
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
     nav ul li.navbar-button.active + li {
       display: block;
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
   nav {
     /* Hide the nav links on small screens */
     display: none;

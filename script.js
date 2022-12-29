@@ -15,7 +15,7 @@ navLinks.forEach((link) => {
 });
 
 // Add a class to the navbar for small screens
-if (window.innerWidth < 768) {
+if (window.innerWidth < 1200) {
   navbar.classList.add('small-screen');
 }
 
