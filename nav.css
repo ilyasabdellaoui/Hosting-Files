@@ -1,3 +1,33 @@
+@media (max-width: 768px) {
+  /* Make the navbar collapsible on small screens */
+  nav {
+    flex-direction: column;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    margin: 0;
+  }
+  nav ul li a,
+  nav ul li button {
+    padding: 10px 0;
+  }
+  nav button.navbar-button {
+    /* Display the navbar button as a block element on small screens */
+    display: block;
+  }
+  nav ul {
+    /* Hide the navbar list on small screens */
+    display: none;
+  }
+  nav ul.active {
+    /* Display the navbar list on small screens when the navbar button is active */
+    display: flex;
+  }
+}
+
+
 nav {
     background-color: #333;
     padding: 20px;
@@ -21,44 +51,6 @@ nav {
 
   nav {
     justify-content: space-between;
-  }
-  
-  @media (max-width: 768px) {
-    nav {
-      /* Hide the nav links on small screens */
-      display: none;
-    }
-  
-    nav button.navbar-button {
-      /* Show the navbar button on small screens */
-      display: block;
-    }
-  
-    nav.small-screen {
-      /* Show the nav links on small screens when the navbar button is clicked */
-      display: block;
-    }
-  
-    nav.small-screen ul {
-      /* Style the nav links on small screens */
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-    }
-  
-    nav.small-screen ul li {
-      /* Style the nav link items on small screens */
-      width: 100%;
-      margin: 0;
-    }
-  
-    nav.small-screen ul li a {
-      /* Style the nav link anchor elements on small screens */
-      display: block;
-      width: 100%;
-      text-align: center;
-    }
   }
   
 
