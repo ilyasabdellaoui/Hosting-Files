@@ -1,29 +1,49 @@
 @media (max-width: 768px) {
-  /* Make the navbar collapsible on small screens */
   nav {
+    /* Set the display property of the navbar to flex */
+    display: flex;
+
+    /* Set the flex-direction property of the navbar to column */
     flex-direction: column;
+
+    /* Set the justify-content property of the navbar to flex-start */
+    justify-content: flex-start;
+
+    /* Set the align-items property of the navbar to stretch */
+    align-items: stretch;
+
+    /* Set the position property of the navbar to fixed */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
   }
-  nav ul {
-    flex-direction: column;
-  }
-  nav ul li {
-    margin: 0;
-  }
-  nav ul li a,
-  nav ul li button {
-    padding: 10px 0;
-  }
+
+  /* Set the display property of the navbar button to block */
   nav button.navbar-button {
-    /* Display the navbar button as a block element on small screens */
     display: block;
   }
+
+  /* Set the display property of the navbar list to none */
   nav ul {
-    /* Hide the navbar list on small screens */
     display: none;
   }
+
+  /* Set the display property of the navbar links and buttons to none */
+  nav ul li {
+    display: none;
+  }
+
+  /* Add a class to the navbar list to make it visible when the navbar button is clicked */
   nav ul.active {
-    /* Display the navbar list on small screens when the navbar button is active */
     display: flex;
+    flex-direction: column;
+  }
+
+  /* Add a class to the navbar links and buttons to make them visible when the navbar button is clicked */
+  nav ul.active li {
+    display: block;
   }
 }
 
