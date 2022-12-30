@@ -114,7 +114,8 @@
   }
 
   .card {
-    transition: 0.5s;
+    /* other styles here */
+    transition: 0.5s; /* add a transition effect */
   }
   
   .card:hover {
