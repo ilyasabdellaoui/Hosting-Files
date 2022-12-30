@@ -12,9 +12,7 @@
     font-family: "Roboto", sans-serif;
     background-color: #e0e0e0;
     margin-top: 130px;
-
   }
-
   nav {
     position: absolute;
     top: 0;
@@ -38,7 +36,6 @@
     line-height: 1.5;
     margin: 20px 0;
   }
-
   .card {
     background-color: #fff;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
@@ -83,7 +80,18 @@
     margin: 0 auto;
     padding: 20px;
   }
-  
+
+  .profile-image {
+    margin: 0 auto 20px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #333;
+    background-image: url(assets/profile.png);
+    background-size: cover;
+  }
+
   .project-image {
     max-width: 100%;
     height: auto;
@@ -102,7 +110,6 @@
     background-color: #333;
     color: #fff;
   }
-
   .card {
     display: inline-block;
     padding: 20px;
@@ -112,7 +119,6 @@
     width: 300px;
     margin: 20px;
   }
-
   .card {
     /* other styles here */
     transition: 0.5s; /* add a transition effect */
@@ -126,7 +132,6 @@
     /* Other styles */
     transition: all 0.5s ease-in-out;
   }
-
   .project-card {
     background-color: #fff;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
@@ -139,7 +144,6 @@
     box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
     transform: translateY(-2px);
   }
-
   .card-container {
     display: flex;
   }
@@ -147,4 +151,3 @@
   .card {
     flex: 1;
   }
-  
