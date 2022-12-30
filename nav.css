@@ -1,53 +1,3 @@
-@media (max-width: 1200px) {
-  nav {
-    /* Set the display property of the navbar to flex */
-    display: flex;
-
-    /* Set the flex-direction property of the navbar to column */
-    flex-direction: column;
-
-    /* Set the justify-content property of the navbar to flex-start */
-    justify-content: flex-start;
-
-    /* Set the align-items property of the navbar to stretch */
-    align-items: stretch;
-
-    /* Set the position property of the navbar to fixed */
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-  }
-
-  /* Set the display property of the navbar button to block */
-  nav button.navbar-button {
-    display: block;
-  }
-
-  /* Set the display property of the navbar list to none */
-  nav ul {
-    display: none;
-  }
-
-  /* Set the display property of the navbar links and buttons to none */
-  nav ul li {
-    display: none;
-  }
-
-  /* Add a class to the navbar list to make it visible when the navbar button is clicked */
-  nav ul.active {
-    display: flex;
-    flex-direction: column;
-  }
-
-  /* Add a class to the navbar links and buttons to make them visible when the navbar button is clicked */
-  nav ul.active li {
-    display: block;
-  }
-}
-
-
 nav {
     background-color: #333;
     padding: 20px;
@@ -73,11 +23,9 @@ nav {
     justify-content: space-between;
   }
   
-
   .left-group,
   .right-group {
     display: flex;
-    
   }
   
   .left-group {
@@ -285,7 +233,7 @@ nav {
   
   
 /* Hide the navbar elements on small screens */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
     nav ul li:not(.navbar-button) {
       display: none;
     }
@@ -295,45 +243,8 @@ nav {
   }
   
   /* Show the navbar elements on small screens when the navbar button is clicked */
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 768px) {
     nav ul li.navbar-button.active + li {
       display: block;
     }
   }
-  @media (max-width: 1200px) {
-  nav {
-    /* Hide the nav links on small screens */
-    display: none;
-  }
-
-  nav button.navbar-button {
-    /* Show the navbar button on small screens */
-    display: block;
-  }
-
-  nav.small-screen {
-    /* Show the nav links on small screens when the navbar button is clicked */
-    display: block;
-  }
-
-  nav.small-screen ul {
-    /* Style the nav links on small screens */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-
-  nav.small-screen ul li {
-    /* Style the nav link items on small screens */
-    width: 100%;
-    margin: 0;
-  }
-
-  nav.small-screen ul li a {
-    /* Style the nav link anchor elements on small screens */
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-}
