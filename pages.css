@@ -81,6 +81,9 @@
     padding: 20px;
   }
 
+/*
+La je peux spicifier si les images vont etre de border carré etc
+*/
   .profile-image {
     margin: 0 auto 20px;
     display: block;
