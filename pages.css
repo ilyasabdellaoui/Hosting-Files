@@ -83,7 +83,7 @@
 
 /*
 La je peux spicifier si les images vont etre de border carré etc
-*/
+
   .profile-image {
     margin: 0 auto 20px;
     display: block;
@@ -96,7 +96,8 @@ La je peux spicifier si les images vont etre de border carré etc
   .project-image {
     height: auto;
   }
-  
+  */
+
   .button {
     display: inline-block;
     padding: 10px 20px;
