@@ -87,16 +87,13 @@ La je peux spicifier si les images vont etre de border carré etc
   .profile-image {
     margin: 0 auto 20px;
     display: block;
-    width: 100px;
-    height: 100px;
-    border-radius: 10%;
+    border-radius: 50%;
     background-color: #333;
     background-image: url(page1.png);
     background-size: cover;
   }
 
   .project-image {
-    max-width: 100%;
     height: auto;
   }
   
