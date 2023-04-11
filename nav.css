@@ -2,24 +2,12 @@ nav {
     background-color: #333;
     padding: 20px;
     border-radius: 10px;
-     /* Set the display property of the navbar to flex */
     display: flex;
-
-    /* Set the position property of the navbar to fixed */
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1;
-  }
-
-  nav {
     position: absolute;
-    top: 0;
-  }
-  
-
-  nav {
     justify-content: space-between;
   }
   
@@ -42,25 +30,16 @@ nav {
     margin: 0;
     padding: 0;
     display: flex;
-    /* Set the flex-direction property of the navbar list to row */
     flex-direction: row;
   
-    /* Set the align-items property of the navbar list to flex-start */
     align-items: flex-start;
     justify-content: space-between;
     align-items: center;
-    /* Set the display property of the navbar list to flex */
-    display: flex;
-
-    /* Set the flex-direction property of the navbar list to row */
-    flex-direction: row;
   }
   
   nav ul li {
     display: inline-block;
     margin-right: 20px;
-
-    /* Set the width property of the navbar list items to auto */
     width: auto;
   }
 
@@ -70,10 +49,7 @@ nav {
     font-size: 18px;
     padding: 10px;
     border-radius: 10px;
-    /* Set the display property of the navbar links and buttons to block */
     display: block;
-
-    /* Set the padding property of the navbar links and buttons */
     padding: 10px 15px;
   }
   
@@ -84,9 +60,9 @@ nav {
   nav ul li a:hover {
     background-color: #444;
     color: #fff;
-    width: auto; /* Add this line to adjust the width of the background color */
-    height: auto; /* Add this line to adjust the height of the background color */
-    padding: 10px 15px; /* Add this line to adjust the padding of the element */
+    width: auto; 
+    height: auto; 
+    padding: 10px 15px;
   }
 
   nav ul li button.button {
@@ -96,23 +72,19 @@ nav {
     border: none;
     cursor: pointer;
     font-size: 18px;
-    transition: all 0.3s ease;
-    padding: 10px;
+    transition: all 0.3s ease-in-out;
     border-radius: 10px;
     outline: none;
-    /* Set the display property of the navbar links and buttons to block */
     display: block;
-
-    /* Set the padding property of the navbar links and buttons */
     padding: 10px 15px;
   }
   
   nav ul li button.button:hover {
     background-color: #444;
     color: #fff;
-    width: auto; /* Add this line to adjust the width of the background color */
-    height: auto; /* Add this line to adjust the height of the background color */
-    padding: 10px 15px; /* Add this line to adjust the padding of the element */
+    width: auto; 
+    height: auto; 
+    padding: 10px 15px;
   }
   
   nav ul li button.button:active {
@@ -126,22 +98,18 @@ nav {
     cursor: pointer;
     font-size: 18px;
     transition: all 0.3s ease;
-    padding: 10px;
     border-radius: 10px;
     outline: none;
-    /* Set the display property of the navbar links and buttons to block */
     display: block;
-
-    /* Set the padding property of the navbar links and buttons */
     padding: 10px 15px;
   }
   
   nav ul li button.mode-button:hover {
     background-color: #444;
     color: #fff;
-    width: auto; /* Add this line to adjust the width of the background color */
-    height: auto; /* Add this line to adjust the height of the background color */
-    padding: 10px 15px; /* Add this line to adjust the padding of the element */
+    width: auto; 
+    height: auto;
+    padding: 10px 15px; 
   }
   
   nav ul li button.mode-button:active {
@@ -149,13 +117,8 @@ nav {
   }
 
   nav ul li a img {
-    /* Set the float property of the icons for the buttons to right */
     float: right;
-
-    /* Set the border-radius property of the icons for the buttons to 50% */
     border-radius: 50%;
-  
-    /* Set the margin property of the icons for the buttons */
     margin: 0 5px -3px 0;
   }
 
