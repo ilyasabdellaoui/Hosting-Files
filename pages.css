@@ -13,11 +13,6 @@
     background-color: #e0e0e0;
     margin-top: 130px;
   }
-  nav {
-    position: absolute;
-    top: 0;
-  }
-  
   
   .main-content {
     max-width: 960px;
@@ -36,6 +31,7 @@
     line-height: 1.5;
     margin: 20px 0;
   }
+
   .card {
     background-color: #fff;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
@@ -57,46 +53,11 @@
   }
   
   
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  li {
-    margin: 20px 0;
-  }
-  
-  a {
-    color: #0074d9;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
   .container {
     max-width: 960px;
     margin: 0 auto;
     padding: 20px;
   }
-
-/*
-La je peux spicifier si les images vont etre de border carré etc
-
-  .profile-image {
-    margin: 0 auto 20px;
-    display: block;
-    border-radius: 50%;
-    background-color: #333;
-    background-image: url(page1.png);
-    background-size: cover;
-  }
-
-  .project-image {
-    height: auto;
-  }
-  */
 
   .button {
     display: inline-block;
@@ -119,20 +80,14 @@ La je peux spicifier si les images vont etre de border carré etc
     text-align: center;
     width: 300px;
     margin: 20px;
-  }
-  .card {
-    /* other styles here */
-    transition: 0.5s; /* add a transition effect */
+    transition: 0.5s ease-in-out;
   }
   
   .card:hover {
     box-shadow: 0px 10px 20px rgba(0,0,0,0.19), 0px 6px 6px rgba(0,0,0,0.23);
   }
   
-  .card {
-    /* Other styles */
-    transition: all 0.5s ease-in-out;
-  }
+  
   .project-card {
     background-color: #fff;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
