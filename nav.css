@@ -1,13 +1,12 @@
 nav {
     background-color: #333;
     padding: 20px;
-    border-radius: 10px;
     display: flex;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1;
-    position: absolute;
+    position: fixed;
     justify-content: space-between;
   }
   
@@ -53,16 +52,24 @@ nav {
     padding: 10px 15px;
   }
   
-  nav ul li a:active {
-    text-decoration: none;
-  }
   
-  nav ul li a:hover {
+  nav.right-group ul li a:hover {
     background-color: #444;
     color: #fff;
     width: auto; 
     height: auto; 
     padding: 10px 15px;
+  }
+
+  nav ul li a img {
+    border: 1px solid #fff;
+    display: inline-flex;
+    border-radius: 50%;
+  }
+
+  nav img:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.2);
   }
 
   nav ul li button.button {
@@ -79,12 +86,14 @@ nav {
     padding: 10px 15px;
   }
   
-  nav ul li button.button:hover {
+  .card-container .button:hover {
     background-color: #444;
     color: #fff;
     width: auto; 
     height: auto; 
     padding: 10px 15px;
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
   }
   
   nav ul li button.button:active {
@@ -114,12 +123,6 @@ nav {
   
   nav ul li button.mode-button:active {
     box-shadow: 0 0 10px #444;
-  }
-
-  nav ul li a img {
-    float: right;
-    border-radius: 50%;
-    margin: 0 5px -3px 0;
   }
 
 
