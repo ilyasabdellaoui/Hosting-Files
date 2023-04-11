@@ -51,6 +51,24 @@ nav {
     display: block;
     padding: 10px 15px;
   }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 20px 0;
+  }
+  
+  a {
+    color: #0074d9;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
   
   
   nav.right-group ul li a:hover {
