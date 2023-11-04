@@ -14,8 +14,9 @@
   justify-content: space-between;
 }
 .card-img {
-  width: 18rem !important;
-  height: 18rem !important;
+  margin: auto;
+  width: 14rem;
+  height: 14rem;
 }
 .card-body {
   flex-grow: 1; /* Allow the body to expand */
@@ -65,6 +66,8 @@
     border-radius: 1rem;
     padding: 10px;
     width: 50%;
+    width: 18rem;
+    height: 18rem;
   }
 
   .card-main {

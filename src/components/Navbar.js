@@ -1,8 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/Navbar.css';
 
 function Navbar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
+
+  // Use useEffect to add or remove 'overflow: hidden' from the body element
+  useEffect(() => {
+    if (isNavExpanded) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  }, [isNavExpanded]);
 
   return (
     <nav className="navigation">

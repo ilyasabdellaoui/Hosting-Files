@@ -11,13 +11,17 @@ function App() {
   const numberOfBooks = 10;
 
   return (
-    <div className="App">
+    <div className="LandingPage">
       <header>
         <Navbar />
       </header>
-      <Hero visits={visits} bookDownloads={bookDownloads} numberOfBooks={numberOfBooks} />
-      <Search />
-      <Carousel />
+      <hero>
+        <Hero visits={visits} bookDownloads={bookDownloads} numberOfBooks={numberOfBooks} />
+      </hero>
+      <section>
+        <Search />
+        <Carousel />
+      </section>
     </div>
   );
 }
