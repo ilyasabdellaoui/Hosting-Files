@@ -1,0 +1,78 @@
+.hero {
+    z-index: -1;
+    background-color: #212529;
+    color: #fff;
+    text-align: center;
+    padding: 60px 0;
+    font-family: 'Inter var', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 2rem;
+    animation: fade-up 2s ease forwards;
+    opacity: 0;
+    animation-delay: 0.5s;
+    z-index: -1;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+    margin: 0;
+    line-height: 1;
+  }
+  
+  .hero-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .hero-stat {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    margin: 0 20px;
+    color: #ced4da;
+    margin-top: 2rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .hero-stat p {
+    font-size: 1rem;
+    color: #adb5bd;
+    font-weight: bold;
+  }
+  @keyframes fade-up {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Add this style for the "Browse Our Books" button */
+.browse-books {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .browse-books button {
+    background-color: #495057;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .browse-books button:hover {
+    color: black;
+    background-color: #adb5bd;
+  }
+  
