@@ -1,0 +1,30 @@
+/* Search box container */
+.search-box-container {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+    background-color:#212529;
+  }
+
+.search-bar {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 800px;
+}
+
+.react-search-box-dropdown-list-item {
+    padding: 1rem;
+    cursor: pointer;
+    background-color: #343a40 !important;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    margin: auto;
+}
+
+.react-search-box-dropdown-list-item:hover {
+    color: #343a40;
+    background-color: #fff !important;
+}
