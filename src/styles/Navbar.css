@@ -1,4 +1,5 @@
 .navigation {
+  z-index: 99;
   height: 60px;
   width: 100%;
   display: flex;
@@ -55,6 +56,12 @@
   font-weight: 500;
 }
 
+@media screen and (min-width: 768px) {
+  .navigation-menu ul {
+    margin: auto;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .brand-name {
     background-color: rgb(37, 37, 37);
@@ -76,14 +83,18 @@
   }
 
   .navigation-menu {
+    display: none;
+  }
+
+  .expanded{
+    display: flex;
     top: 60px;
+    margin: auto;
     flex-direction: column;
-    width: 100%;
-    height: calc(100vh - 77px);
+    width: 100vw;
+    height: 100vh;
     background-color: white;
     border-top: 1px solid black;
-    position: absolute !important;
-    right: 0 !important;
   }
 
   .navigation-menu li {

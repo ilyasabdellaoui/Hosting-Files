@@ -1,0 +1,80 @@
+.carousel-div {
+  background-color: #212529;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card {
+  background-color: #212520;
+  padding: 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-img {
+  width: 18rem !important;
+  height: 18rem !important;
+}
+.card-body {
+  flex-grow: 1; /* Allow the body to expand */
+  color: white;
+}
+
+.card-title {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  margin: 1rem 0;
+  color: white;
+  font-size: 1rem;
+}
+
+.card-readMore {
+  background-color: #212520;
+  border: 1px solid white;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, border-color 0.3s;
+  align-self: center;
+  width: 10rem;
+  margin-top: 1rem; /* Adjust the spacing as needed */
+}
+
+.card-readMore:hover, .card-readMore:focus, .card-readMore:active {
+  background-color: white !important;
+  border: #212529 solid 0.5px;
+  color: #212520 !important;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    margin: auto;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card-img {
+    border-radius: 1rem;
+    padding: 10px;
+    width: 50%;
+  }
+
+  .card-main {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-text {
+    margin-top: 2rem;
+  }
+}
