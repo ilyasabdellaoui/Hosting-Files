@@ -1,35 +1,20 @@
 // import React, { useEffect, useState } from 'react';
 // import ReactGA from 'react-ga';
 import './App.css';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Search from './components/Search';
-import Carousel from './components/Carousel';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Home from './pages/Home';
+import Books from './pages/Books';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
-  const visits = 10000;
-  const bookDownloads = 100000;
-  const numberOfBooks = 10;
-
   return (
-    <div className="LandingPage">
-      <header>
-        <Navbar />
-      </header>
-      <hero>
-        <Hero visits={visits} bookDownloads={bookDownloads} numberOfBooks={numberOfBooks} />
-      </hero>
-      <section>
-        <Search />
-        <Carousel />
-        <Contact/>
-      </section>
-      <footer>
-        <Footer />
-      </footer>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/ANT" element={<Books book="ANT" />} />
+        <Route path="/DJC" element={<Books book="DJC" />} />
+        <Route path="/BAM" element={<Books book="BAM" />} />
+      </Routes>
+    </Router>
   );
 }
 

@@ -1,0 +1,87 @@
+/* Book.css */
+.book-container {
+  position: relative;
+  top: 80px;
+  bottom: 80px;
+  display: flex;
+  padding: 16px;
+  max-width: 80%;
+  margin: auto;
+  color: #fff;
+}
+
+.book-image {
+  margin: 5rem 1rem 5rem 0;
+  max-width: 50%;
+  max-height: 50%;
+  margin-right: 16px;
+  border-radius: 0.75rem;
+}
+
+@media screen and (max-width: 800px) {
+  .book-container {
+    flex-direction: column;
+    margin-bottom: 10rem;
+  }
+  .book-image {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+  
+}
+
+.book-details {
+  flex: 1;
+  margin: auto;
+  font-size: 1.2rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.book-title {
+  font-size: 1.85rem;
+  margin-bottom: 8px;
+}
+
+.book-description {
+  margin-bottom: 8px;
+}
+
+.book-writer {
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.book-download-button {
+  display: inline-block;
+  padding: 8px 16px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color:#212529;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: #757575 1px solid;
+  font-weight: 500;
+}
+
+.book-download-button:hover {
+  background-color: white;
+  color: #333;
+}
+
+.OtherBooks {
+  margin-top: 5rem;
+  z-index: 1;
+  color:#fff;
+  text-align: center;
+}
+
+.OtherBooks h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
