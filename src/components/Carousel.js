@@ -23,7 +23,7 @@ const CustomCarousel = () => {
     {
       route: "DJC",
       title: "LE DERNIER JOUR D'UN CONDAMNÉ",
-      description: "Roman de Victor Hugo décrivant les émotions du condamné à mort lors de son dernier jour, explorant l'angoisse et la désespérance avant l'exécution.",
+      description: "Roman de Victor Hugo décrivant les émotions d'un condamné à mort lors de son dernier jour, explorant la désespérance avant l'exécution.",
       image: "../../DJC.png"
     },
   ];

@@ -9,3 +9,15 @@
       border-style: none solid !important;
     }
 }
+
+.OtherBooks {
+  margin-top: 5rem;
+  z-index: 1;
+  color:#fff;
+  text-align: center;
+}
+
+.OtherBooks h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}

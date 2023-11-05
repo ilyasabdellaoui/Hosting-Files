@@ -1,6 +1,7 @@
 import './Books.css';
 import Navbar from '../components/Navbar';
 import Book from '../components/Book';
+import Carousel from '../components/Carousel';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 
@@ -9,25 +10,29 @@ const BookData = [
       abbr: "ANT",
       title: "Antigone",
       image: window.location + ".png",
-      description: "Antigone est une pièce de théâtre écrite par Jean Anouilh en 1942 et représentée pour la première fois le 4 février 1944 au théâtre de l'Atelier à Paris. Elle fait partie de la série des « Pièces noires » d'Anouilh, qui revisite les mythes grecs de façon moderne. La pièce est inspirée de la mythologie grecque et plus précisément du mythe d'Antigone, fille d'Œdipe. Elle est la fille de Jocaste et Œdipe, roi de Thèbes. Elle est la sœur d'Étéocle et Polynice. Elle est fiancée à Hémon, fils de Créon. Elle est la nièce de Créon, roi de Thèbes. Elle est la petite-fille de Laïos et Jocaste. Elle est la petite-nièce de Pélops et Hippodamie.",
+      description: "Antigone, écrite par Jean Anouilh en 1944, est une réinterprétation moderne de la tragédie antique de Sophocle, mais elle est ancrée dans les dilemmes de la France occupée pendant la Seconde Guerre mondiale. La pièce raconte l'histoire d'une famille et de ses guerres internes touchant aux thèmes de la loyauté, de la justice et du divin. Antigone est une tragédie moderne qui met en lumière la lutte de la protagoniste, Antigone, pour défendre ses convictions morales et religieuses en dépit des lois édictées par le pouvoir établi. Le message central de la pièce est celui de la résistance individuelle face à l’autorité oppressante.",
       writer: "Jean Anouilh",
-      downloadLink: "https://www.google.com"
+      downloadLink: "https://www.google.com",
+      downloadFrench: "https://www.google.com"
   },
   {
       abbr: "DJC",
       title: "Le Dernier Jour d'un Condamné",
       image: window.location + ".png",
-      description: "Le Dernier Jour d'un condamné est un roman de Victor Hugo publié en 1829 chez Charles Gosselin, un an avant la parution de Notre-Dame de Paris. Il s'agit d'un réquisitoire contre la peine de mort. Le roman est écrit à la première personne et relate les vingt-quatre dernières heures d'un condamné à mort qui va être exécuté le lendemain matin. Il est composé de 48 chapitres, chacun correspondant à une heure de la journée.Le narrateur est un condamné à mort qui va être exécuté le lendemain matin. Il est enfermé dans une cellule de la prison de Bicêtre. Il est très triste et il est très déprimé. Il est très angoissé et il a très peur de la mort.",
+      description: "Le Dernier jour d'un condamné, écrit par Victor Hugo en 1829, est un roman qui raconte les dernières heures de vie d'un condamné à mort. Le roman est un réquisitoire contre la peine de mort et dénonce la cruauté de la justice. Le personnage principal, le condamné, est anonyme et représente tous les condamnés à mort. Le roman est divisé en 48 chapitres, et le dernier chapitre décrit les derniers moments du condamné avant son exécution. Le roman est écrit à la première personne, ce qui permet au lecteur de ressentir les émotions du condamné.",
       writer: "Victor Hugo",
-      downloadLink: "https://www.google.com"
+      downloadLink: "https://www.google.com",
+      downloadFrench: "https://www.google.com"
   },
   {
       abbr: "BAM",
       title: "La Boîte à Merveilles",
       image: window.location + ".png",
-      description: "La Boîte à Merveilles est un roman autobiographique de l'écrivain marocain Ahmed Sefrioui, publié en 1954. Il est considéré comme l'un des premiers romans marocains écrits en français. Le roman raconte l'histoire d'un enfant, Sidi Mohammed, qui vit dans la médina de Fès avec ses parents et sa nourrice, la vieille dame. Il est le seul enfant de la famille et il est très gâté par sa mère. Il est très proche de sa nourrice qui lui raconte des histoires et lui chante des chansons. Il est très attaché à sa mère et à sa nourrice. Il est très curieux et il aime bien explorer les choses. Il est très sensible et il pleure facilement.",
+      description: "La Boîte à merveilles est un roman autobiographique écrit par Ahmed Sefrioui en 1954. Le roman raconte la vie quotidienne d'une famille populaire dans la vieille ville de Fès, au Maroc, à l'époque du protectorat français. Le personnage principal, Sidi Mohammed, est un enfant de six ans qui décrit sa vie, ses rêves et ses peurs. Le roman est divisé en plus de trente souvenirs qui sont des tableaux de la vie quotidienne de la famille de Sidi Mohammed. La Boîte à merveilles est considérée comme un chef-d'œuvre de la littérature marocaine d'expression française.",
       writer: "Ahmed Sefrioui",
-      downloadLink: "https://www.google.com"
+      downloadLink: "https://www.google.com",
+      downloadFrench: "https://www.example.com"
+      
   }
 ];
 
@@ -43,6 +48,8 @@ function Books() {
     <div className="page">
       <Navbar />
       <Book book={book} />
+      <h2 className="OtherBooks">More to Explore</h2>
+      <Carousel />
       <Contact />
       <Footer />
     </div>

@@ -23,7 +23,7 @@
   position: absolute;
   top: -10px;
   right: -10px;
-  width: 30px; /* Adjust the width and height as needed */
+  width: 30px;
   height: 30px;
   border-radius: 50%;
   background-color: white;
@@ -37,7 +37,7 @@
 .card-img {
   margin: auto;
   width: 14rem;
-  height: 14rem;
+  height: 16.8rem;
 }
 .card-body {
   flex-grow: 1;
@@ -54,6 +54,9 @@
   margin: 1rem 0;
   color: white;
   font-size: 1rem;
+  text-align: justify;
+  text-justify: inter-word;
+  text-align-last: center;
 }
 
 .card-readMore {
@@ -88,7 +91,7 @@
     padding: 10px;
     width: 50%;
     width: 18rem;
-    height: 18rem;
+    height: 21.6rem;
   }
 
   .card-main {
@@ -101,4 +104,12 @@
   .card-text {
     margin-top: 2rem;
   }
+}
+
+.carousel-indicators {
+  bottom: -2rem;
+}
+
+.carousel-control-prev, .carousel-control-next {
+width: 10%;
 }
