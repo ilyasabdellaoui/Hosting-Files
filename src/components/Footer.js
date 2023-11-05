@@ -7,7 +7,7 @@ function Footer() {
       <div className="footer-content">
         <div className="footer-logo">
           <a href="https://arabooks.vercel.app" className="footer-link">
-            <img src="../../logo192x.png" alt="Logo" />
+            <img src="../../logorounded.png" alt="Logo" />
           </a>
         </div>
         <div className="footer-sections">
