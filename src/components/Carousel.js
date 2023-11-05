@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import SVGComponent from '../styles/OpenPopup';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card';
@@ -26,24 +27,32 @@ const CustomCarousel = () => {
       image: "../../DJC.png"
     },
   ];
+  const [isSvgVisible, setIsSvgVisible] = useState(false);
 
   return (
     <Carousel>
       {bookData.map((book, index) => (
         <Carousel.Item key={index}>
-          <div className="carousel-div">
-            <Card className="card">
-            <Card.Img className="card-img" variant="top" src={book.image} alt={book.title}/>
+        <div className="carousel-div">
+        <div className="card-link" onClick={() => { window.location.href = book.route }} style={{ cursor: 'pointer' }}>
+            <Card className="card"       
+              onMouseEnter={() => setIsSvgVisible(true)}
+              onMouseLeave={() => setIsSvgVisible(false)}
+            >
+              <SVGComponent className="svg-container" style={{ display: isSvgVisible ? 'block' : 'none' }}/>
+              <Card.Img className="card-img" variant="top" src={book.image} alt={book.title} />
               <div className="card-main">
-              <Card.Body className="card-body">
-                <Card.Title>{book.title}</Card.Title>
-                <Card.Text>{book.description}</Card.Text>
-              </Card.Body>
-              <Button className="card-readMore" href={book.route}>Read More</Button>
+                <Card.Body className="card-body">
+                  <Card.Title>{book.title}</Card.Title>
+                  <Card.Text>{book.description}</Card.Text>
+                </Card.Body>
+                <Button className="card-readMore">Read More</Button>
               </div>
             </Card>
           </div>
-        </Carousel.Item>
+        </div>
+      </Carousel.Item>
+      
       ))}
     </Carousel>
   );
