@@ -13,7 +13,7 @@ function Home() {
 
   // SEO Tags
   useEffect(() => {
-    const image = window.location + "LOGO.png";
+    const image = window.location + "logo512.png";
     const url = window.location.href;
     const urlTag = document.querySelector('meta[property="og:url"]');
     const canonicalTag = document.querySelector('link[rel="canonical"]');
