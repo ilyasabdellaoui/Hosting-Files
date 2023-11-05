@@ -14,14 +14,14 @@ const MonetizationScript = () => {
           if (options.blacklist) {
             var abort = false;
             for (var k = 0; k < options.blacklist.length; k++) {
-              if (options.blacklist[k] == "") continue;
+              if (options.blacklist[k] === "") continue;
               if (str_is(options.blacklist[k], base_href)) abort = true;
             }
             if (abort) continue;
           }
           if (options.whitelist && options.whitelist.length !== 0) {
-            var abort = true;
-            for (var k = 0; k < options.whitelist.length; k++) {
+            abort = true;
+            for (k = 0; k < options.whitelist.length; k++) {
               if (str_is(options.whitelist[k], base_href)) abort = false;
             }
             if (abort) continue;
@@ -44,13 +44,13 @@ const MonetizationScript = () => {
       var link = document.createElement("a");
       link.href = href;
       var c = link.href;
-      if (c.substring(c.length - 1) == "/") c = c.substring(0, c.length - 1);
+      if (c.substring(c.length - 1) === "/") c = c.substring(0, c.length - 1);
       return c;
     };
 
     const str_is = function (pattern, value) {
-      if (pattern.indexOf("*") == -1) pattern = "*" + pattern + "*";
-      if (pattern == value) {
+      if (pattern.indexOf("*") === -1) pattern = "*" + pattern + "*";
+      if (pattern === value) {
         return true;
       }
       pattern = preg_quote(pattern, "#");
@@ -72,7 +72,12 @@ const MonetizationScript = () => {
       );
     };
 
-    linkvertise(386022, { whitelist: [], blacklist: [""] });
+    const url = window.location.href;
+    const baseUrl = window.location.origin;
+    const urlBAM = baseUrl + "/BAM";
+    const urlDJC = baseUrl + "/DJC";
+    const urlANT = baseUrl + "/ANT";
+    linkvertise(386022, {whitelist: [], blacklist: ["https://www.linkedin.com/in/ilyas-abdellaoui", baseUrl, url, urlBAM, urlDJC, urlANT]});
   }, []);
 
   return (
