@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Arabooks brings the world of translated books to Arabic readers. Explore a wide range of translated literature and expand your horizons with our collection." />
+  <meta name="description"
+    content="Arabooks brings the world of translated books to Arabic readers. Explore a wide range of translated literature and expand your horizons with our collection." />
   <meta property="og:title" content="Arabooks: Bringing the World to Arabic Readers - Translated Books to Arabic" />
-  <meta property="og:description" content="Arabooks brings the world of translated books to Arabic readers. Explore a wide range of translated literature and expand your horizons with our collection." />
+  <meta property="og:description"
+    content="Arabooks brings the world of translated books to Arabic readers. Explore a wide range of translated literature and expand your horizons with our collection." />
   <meta property="og:image" content="" />
   <meta property="og:url" content="https://arabooks.vercel.app" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Arabooks: Bringing the World to Arabic Readers - Translated Books to Arabic" />
-  <meta name="twitter:description" content="Arabooks brings the world of translated books to Arabic readers. Explore a wide range of translated literature and expand your horizons with our collection." />
+  <meta name="twitter:description"
+    content="Arabooks brings the world of translated books to Arabic readers. Explore a wide range of translated literature and expand your horizons with our collection." />
   <meta name="twitter:image" content="" />
   <meta property="og:site_name" content="Arabooks" /> <!-- Facebook-specific tag -->
   <meta property="og:type" content="website" /> <!-- Facebook-specific tag -->
@@ -27,7 +31,8 @@
   <link rel="canonical" href="https://arabooks.vercel.app" />
   <title>Arabooks: Bringing the World to Arabic Readers - Translated Books to Arabic</title>
   <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KSSFMBJ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KSSFMBJ" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe>
   </noscript>
   <script>
     (function (w, d, s, l, i) {
@@ -39,7 +44,8 @@
           'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-KSSFMBJ');
   </script>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9638769270603072" crossorigin="anonymous"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9638769270603072"
+    crossorigin="anonymous"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-68P75251RJ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -47,10 +53,47 @@
     gtag('js', new Date());
     gtag('config', 'G-68P75251RJ');
   </script>
-  <script async src="https://publisher.linkvertise.com/cdn/linkvertise.js">
-  </script><script>linkvertise(386022, {whitelist: [], blacklist: [""]});</script>
+  <script>
+    linkvertise = function (user_id, options) { document.addEventListener('DOMContentLoaded', function () { convert(user_id, options); }, false); }; var convert = function (user_id, options) {
+      var elements = document.querySelectorAll("a[href]"); debug("Scanning " + elements.length + " elements"); for (var i = 0; i < elements.length; i++) {
+        var link = elements[i]; var base_href = markup(link.href); if (base_href.match(new RegExp("^https?://")) == null)
+          continue; if (options) {
+            if (options.blacklist) {
+              var abort = false; for (var k = 0; k < options.blacklist.length; k++) {
+                if (options.blacklist[k] == "") continue; if (str_is(options.blacklist[k], base_href))
+                  abort = true;
+              }
+              if (abort)
+                continue;
+            }
+            if (options.whitelist && options.whitelist.length != 0) {
+              var abort = true; for (var k = 0; k < options.whitelist.length; k++) {
+                if (str_is(options.whitelist[k], base_href))
+                  abort = false;
+              }
+              if (abort)
+                continue;
+            }
+          }
+        debug("Converting '" + base_href + "'"); var base_url = "https://link-to.net/" + user_id + "/" + Math.random() * 1000 + "/dynamic/"; var href = base_url + "?r=" + btoa(encodeURI(base_href)); link.href = href; link.setAttribute("_target", "blank");
+      }
+    }; var debug = function (message) { return; console.log("[Linkvertise API] " + message); }; var markup = function (href) {
+      var link = document.createElement("a"); link.href = href; var c = link.href; if (c.substring(c.length - 1) == "/")
+        c = c.substring(0, c.length - 1); return c;
+    }; var checkDomain = function (url) {
+      if (url.indexOf('//') === 0) { url = location.protocol + url; }
+      return url.toLowerCase().replace(/([a-z])?:\/\//, '$1').split('/')[0];
+    }; var isExternal = function (url) { return ((url.indexOf(':') > -1 || url.indexOf('//') > -1) && checkDomain(location.href) !== checkDomain(url)); }; var str_is = function (pattern, value) {
+      if (pattern.indexOf("*") == -1)
+        pattern = "*" + pattern + "*"; if (pattern == value) { return true; }
+      pattern = preg_quote(pattern, '#'); pattern = pattern.replace(/\\\*/g, function (x) { return "\.*"; }); pattern = new RegExp('^' + pattern + '$'); var res = value.match(pattern); return res !== null;
+    }; function preg_quote(str, delimiter) { return (str + '').replace(new RegExp('[.\\\\+*?\\[\\^\\]$(){}=!<>|:\\' + (delimiter || '') + '-]', 'g'), '\\$&') }
+  </script>
+  <script>linkvertise(386022, { whitelist: [], blacklist: [""] });</script>
 </head>
+
 <body>
   <div id="root"></div>
 </body>
+
 </html>
