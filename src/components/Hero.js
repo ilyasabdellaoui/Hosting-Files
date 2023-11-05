@@ -28,7 +28,7 @@ const Hero = ({ visits, bookDownloads, numberOfBooks }) => {
             </div>
           </div>
           <div className="browse-books">
-            <button onClick={scrollToNextComponent}>Browse Our Books</button>
+            <button onClick={scrollToNextComponent}>Explore Our Books</button>
           </div>
         </div>
       </section>

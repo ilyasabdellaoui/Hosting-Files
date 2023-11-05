@@ -6,7 +6,7 @@ function Search() {
         <div className="search-box-container">
             <div className="search-bar">
           <ReactSearchBox
-            placeholder="Search for books"
+            placeholder="Search books..."
             data={[
               {
                 key: "Antigone",

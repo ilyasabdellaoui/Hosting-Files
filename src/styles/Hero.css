@@ -20,8 +20,15 @@
   
   .hero h1 {
     font-size: 2rem;
-    margin: 0;
+    margin: auto;
     line-height: 1;
+    margin-top: 50px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .hero h1 {
+      margin-top: 100px;
+    }
   }
   
   .hero-stats {
@@ -61,18 +68,18 @@
   }
   
   .browse-books button {
-    background-color: #495057;
-    color: #fff;
+    background-color:#212529;
+    color: white;
     font-size: 1.2rem;
+    font-weight: bold;
     padding: 10px 20px;
-    border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    border: #757575 1px solid;
   }
   
   .browse-books button:hover {
-    color: black;
-    background-color: #adb5bd;
+    background-color: #3d3d3d;
   }
   
