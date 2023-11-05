@@ -14,8 +14,13 @@ function Home() {
   // SEO Tags
   useEffect(() => {
     const image = window.location + "LOGO.png";
+    const url = window.location.href;
+    const urlTag = document.querySelector('meta[property="og:url"]');
+    const canonicalTag = document.querySelector('link[rel="canonical"]');
     const ogImage = document.querySelector('meta[property="og:image"]');
     const twitterImage = document.querySelector('meta[name="twitter:image"]');
+    urlTag.setAttribute("content", url);
+    canonicalTag.setAttribute("href", url);
     ogImage.setAttribute("content", image);
     twitterImage.setAttribute("content", image);
   }, []);
