@@ -71,7 +71,6 @@ const MonetizationScript = () => {
         '\\$&'
       );
     };
-
     const url = window.location.href;
     const baseUrl = window.location.origin;
     const urlBAM = baseUrl + "/BAM";
