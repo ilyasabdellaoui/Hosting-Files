@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react';
 import './Books.css';
 import Navbar from '../components/Navbar';
 import Book from '../components/Book';
 import Carousel from '../components/Carousel';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import { Helmet } from 'react-helmet';
 
 const BookData = [
   {
@@ -36,41 +36,31 @@ const BookData = [
       
   }
 ];
-
 function Books() {
   const bookAbbr = window.location.pathname.replace("/", "");
   const book = BookData.find(book => book.abbr === bookAbbr);
 
-  useEffect(() => {
-    if (book) {
-      // Set the page title based on the selected book's title
-      document.title = `Arabooks - ${book.title}`;
-
-      // Update meta tags for description and og:image
-      const metaDescription = document.querySelector('meta[name="description"]');
-      const ogTitle = document.querySelector('meta[property="og:title"]');
-      const ogDescription = document.querySelector('meta[property="og:description"]');
-      const ogImage = document.querySelector('meta[property="og:image"]');
-      const twitterTitle = document.querySelector('meta[name="twitter:title"]');
-      const twitterDescription = document.querySelector('meta[name="twitter:description"]');
-      const twitterImage = document.querySelector('meta[name="twitter:image"]');
-
-      metaDescription.setAttribute("content", book.description);
-      ogTitle.setAttribute("content", book.title);
-      ogDescription.setAttribute("content", book.description);
-      ogImage.setAttribute("content", book.image);
-      twitterTitle.setAttribute("content", book.title);
-      twitterDescription.setAttribute("content", book.description);
-      twitterImage.setAttribute("content", book.image);
-    }
-  }, [book]);
-
   if (!book) {
       return null;
   }
+  const pageTitle = `Arabooks - ${book.title}`;
 
   return (
     <div className="page">
+      <Helmet>
+        <title>{pageTitle}</title>
+        <meta name="description" content={book.description} />
+        <meta property="og:title" content={book.title} />
+        <meta property="og:description" content={book.description} />
+        <meta property="og:image" content={book.image} />
+        <meta name="twitter:title" content={book.title} />
+        <meta name="twitter:description" content={book.description} />
+        <meta name="twitter:image" content={book.image} />
+
+        <script async src="https://publisher.linkvertise.com/cdn/linkvertise.js"></script>
+        <script dangerouslySetInnerHTML={{__html: 'linkvertise(386022, {whitelist: [], blacklist: [""]});'}} />
+
+      </Helmet>
       <Navbar />
       <Book book={book} />
       <h2 className="OtherBooks">More to Explore</h2>
