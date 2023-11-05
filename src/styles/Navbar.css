@@ -2,9 +2,9 @@
   z-index: 99;
   height: 60px;
   width: 100%;
+  max-width: 1078px;
   display: flex;
   align-items: center;
-  position: relative;
   padding: 0.5rem 0rem;
   background-color: #212529;
   color: black;
@@ -40,7 +40,15 @@
   background-color: #575758;
 }
 
+.navigation-menu {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  z-index: -99;
+}
+
 .navigation-menu ul {
+  margin-right: 0 !important;
   display: flex;
   padding: 0;
 }

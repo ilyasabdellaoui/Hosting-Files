@@ -1,3 +1,15 @@
-.LandingPage {
+#root {
   background-color: #212529;
+}
+
+.LandingPage {
+  margin: auto;
+  max-width: 1080px !important;
+}
+
+@media screen and (min-width: 1080px) {
+  .LandingPage {
+    border: #333 0.75px solid !important;
+    border-style: none solid !important;
+  }
 }
