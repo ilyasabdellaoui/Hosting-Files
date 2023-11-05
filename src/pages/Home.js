@@ -1,5 +1,4 @@
-// import React, { useEffect, useState } from 'react';
-// import ReactGA from 'react-ga';
+import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Search from '../components/Search';
@@ -11,6 +10,15 @@ function Home() {
   const visits = 10000;
   const bookDownloads = 100000;
   const numberOfBooks = 10;
+
+  // SEO Tags
+  useEffect(() => {
+    const image = window.location + "LOGO.png";
+    const ogImage = document.querySelector('meta[property="og:image"]');
+    const twitterImage = document.querySelector('meta[name="twitter:image"]');
+    ogImage.setAttribute("content", image);
+    twitterImage.setAttribute("content", image);
+  }, []);
 
   return (
     <div className="LandingPage">
