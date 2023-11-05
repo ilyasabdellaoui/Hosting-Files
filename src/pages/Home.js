@@ -1,34 +1,32 @@
+import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Search from '../components/Search';
 import Carousel from '../components/Carousel';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
-import { Helmet } from 'react-helmet';
 
 function Home() {
   const visits = 10000;
   const bookDownloads = 100000;
   const numberOfBooks = 10;
 
-  const baseUrl = window.location.href;
-  const logoUrl = `${baseUrl}LOGO.png`;
+  // SEO Tags
+  useEffect(() => {
+    const image = window.location + "logo512.png";
+    const url = window.location.href;
+    const urlTag = document.querySelector('meta[property="og:url"]');
+    const canonicalTag = document.querySelector('link[rel="canonical"]');
+    const ogImage = document.querySelector('meta[property="og:image"]');
+    const twitterImage = document.querySelector('meta[name="twitter:image"]');
+    urlTag.setAttribute("content", url);
+    canonicalTag.setAttribute("href", url);
+    ogImage.setAttribute("content", image);
+    twitterImage.setAttribute("content", image);
+  }, []);
 
   return (
     <div className="LandingPage">
-        <Helmet>
-          <meta name="description" content="Arabooks brings the world of translated books to Arabic readers. Explore a wide range of translated literature and expand your horizons with our collection." />
-          <meta property="og:title" content="Arabooks: Bringing the World to Arabic Readers - Translated Books to Arabic" />
-          <meta property="og:description" content="Arabooks brings the world of translated books to Arabic readers. Explore a wide range of translated literature and expand your horizons with our collection." />
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Arabooks: Bringing the World to Arabic Readers - Translated Books to Arabic" />
-          <meta name="twitter:description" content="Arabooks brings the world of translated books to Arabic readers. Explore a wide range of translated literature and expand your horizons with our collection." />
-          <title>Arabooks: Bringing the World to Arabic Readers - Translated Books to Arabic</title>
-          <meta property="og:url" content={baseUrl} />
-          <meta property="og:image" content={logoUrl} />
-          <meta name="twitter:image" content={logoUrl} />
-          <link rel="canonical" href={baseUrl} />
-        </Helmet>
         <Navbar />
         <Hero visits={visits} bookDownloads={bookDownloads} numberOfBooks={numberOfBooks} />
         <Search />
